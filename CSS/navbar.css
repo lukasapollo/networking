@@ -1,0 +1,106 @@
+/*  index.html   */
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 25px;
+}
+
+.navbar img{
+    cursor: pointer;
+}
+
+
+/*  networking.html   */
+
+.navbar-networking{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 30px 0 0 30px;
+}
+
+.title-networking {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+/*  networking.html - cards  */
+
+section {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card-networking {
+    display: flex;
+    width: 100%;
+    max-width: 500px;
+    padding: 8px 25px;
+    gap: 1rem;
+    background-color: #1C2129;
+    border-left: 4px solid #F9C200;
+    border-radius: 3px;
+    align-items: center;
+
+    box-shadow: 1px 2px 1px #1313134f;;
+}
+
+.container-ref{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.container-icon{
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+
+.ref-title{
+    color: #444B58;
+}
+
+.qtd-ref{
+    color: #98A4BA;
+    font-weight: bold;
+}
+
+/*  networking.html - list  */
+
+.main-list{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-top: 23px;
+}
+
+.list-style{
+    width: 100%;
+    max-width: 500px;
+}
+
+.title-list{
+    display: flex;
+    font-size: 10px;
+    color: #ADBCD7;
+    align-items: center;
+    margin-top: 8px;
+    border-bottom: 1px solid #303847;
+    border-top: 1px solid #303847;
+    padding: 5px 0px;
+}
+
+.title-list div{
+    width: 100%;
+    text-align: center;
+}

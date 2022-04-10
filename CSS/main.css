@@ -1,0 +1,67 @@
+div.h3 {
+    padding-left: 25px;
+    margin-bottom: 20px;
+}
+
+a.cards-links {
+    text-decoration: none;
+}
+
+.container-cards{
+    padding: 0 25px;
+}
+
+.cards {
+    display: flex;
+    padding: 15px;
+    background-color: #1C2129;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+
+.desc-card{
+    width: 35%;
+}
+
+.text-color-t{
+    color: #9DA9BF;
+    font-weight: 700;
+}
+
+.arrow{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content:flex-end;
+}
+
+.arrow img{
+    cursor: pointer;
+}
+
+.p-size{
+    font-size: 12px;
+    font-weight: 600;
+    color: #484D54;
+}
+
+.cards:hover{
+    background-color: #1ADF2E;
+}
+
+.cards:hover .text-color-t{
+    color: #31343A;
+}
+
+.cards:hover .p-size{
+    color:#474747;
+}
+
+.cards:hover .path {
+    stroke: #31343A;
+}
+
+.cards:hover .fill{
+    fill: #31343A;
+}
