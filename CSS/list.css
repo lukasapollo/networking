@@ -34,3 +34,42 @@
     border-left: 1px solid #303847;
     border-right: 1px solid #303847;
 }
+
+
+/*  networking.html - list - itens da lista */
+
+.item-list{
+    width: 100%;
+    max-width: 648px;
+
+    display: flex;
+    background-color: #1C2129;
+    height: 50px;
+    border-radius: 5px;
+    margin-top: 8px;
+}
+
+.item-list div{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-size: .8rem;
+    color: #717987;
+    align-items: center;
+}
+
+.item-list div button {
+    width: 64px;
+    height: 29px;
+    border: none;
+    background-color: #D8237A;
+    color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.email-list span{
+    width: 89%;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
