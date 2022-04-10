@@ -1,0 +1,36 @@
+/*  networking.html - list  */
+
+.set-container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0px 20px;
+    margin-top: 23px;
+}
+
+.list-style{
+    width: 100%;
+    max-width: 648px;
+}
+
+.title-list{
+    display: flex;
+    font-size: 0.9rem;
+    color: #ADBCD7;
+    align-items: center;
+    margin-top: 10px;
+    border-bottom: 1px solid #303847;
+    border-top: 1px solid #303847;
+    padding: 6px 0px;
+}
+
+.title-list div{
+    width: 100%;
+    text-align: center;
+}
+
+.title-list div:nth-child(even){
+    border-left: 1px solid #303847;
+    border-right: 1px solid #303847;
+}

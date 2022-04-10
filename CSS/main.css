@@ -21,7 +21,7 @@ a.cards-links {
 
 
 .desc-card{
-    width: 35%;
+    width: 70%;
 }
 
 .text-color-t{
@@ -30,7 +30,7 @@ a.cards-links {
 }
 
 .arrow{
-    width: 65%;
+    width: 30%;
     display: flex;
     align-items: center;
     justify-content:flex-end;
