@@ -19,6 +19,7 @@
     align-items: center;
     justify-content: flex-start;
     padding: 30px 0 0 30px;
+    margin-bottom: 12px;
 }
 
 .title-networking {
@@ -26,6 +27,7 @@
     align-items: center;
     justify-content: center;
     margin-bottom: 25px;
+    font-size: 27px;
 }
 
 /*  networking.html - cards  */
@@ -39,15 +41,14 @@ section {
 .card-networking {
     display: flex;
     width: 100%;
-    max-width: 500px;
-    padding: 8px 25px;
+    max-width: 648px;
+    padding: 11px 25px;
     gap: 1rem;
     background-color: #1C2129;
-    border-left: 4px solid #F9C200;
+    border-left: 5px solid #F9C200;
     border-radius: 3px;
     align-items: center;
-
-    box-shadow: 1px 2px 1px #1313134f;;
+    box-shadow: 2px 3px 1px #1313134d;
 }
 
 .container-ref{
@@ -86,18 +87,18 @@ section {
 
 .list-style{
     width: 100%;
-    max-width: 500px;
+    max-width: 648px;
 }
 
 .title-list{
     display: flex;
-    font-size: 10px;
+    font-size: 0.9rem;
     color: #ADBCD7;
     align-items: center;
     margin-top: 8px;
     border-bottom: 1px solid #303847;
     border-top: 1px solid #303847;
-    padding: 5px 0px;
+    padding: 6px 0px;
 }
 
 .title-list div{
