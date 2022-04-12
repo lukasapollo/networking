@@ -9,6 +9,10 @@
     margin-top: 23px;
 }
 
+.container-card-list {
+    padding-bottom: 39px;
+}
+
 .list-style{
     width: 100%;
     max-width: 648px;
