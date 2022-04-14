@@ -65,3 +65,91 @@ a.cards-links {
 .cards:hover .fill{
     fill: #31343A;
 }
+
+/* setup.html - main */
+
+.section-cards{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 0px 13px;
+}
+
+.section-cards .icon-social{
+    padding-top: 3px;
+}
+
+.social-cards{
+    background-color: #212630;
+    padding: 10px 15px;
+    border-radius: 6px;
+
+    width: 100%;
+    max-width: 480px;
+
+    display: flex;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+.social-cards p{
+    font-size: 14px;
+    color: #7e7e7e;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* setup.html - warning */
+
+.container-warning {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.content-btn{
+    padding: 0px 15px;
+    width: 100%;
+}
+
+.container-warning h4{
+    color: #00bcd4;
+}
+
+.container-warning div{
+    max-width: 480px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-warning div p{
+    text-align: left;
+    font-size: 14px;
+    color: #484848
+}
+
+.container-btn-acess{
+    width: 100%;
+    background-color: #673ABC;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    padding: 12px 74px;
+}
+
+.container-btn-acess .btn-acess{
+    width: 144px;
+    display: flex;
+    gap: 5px;
+}

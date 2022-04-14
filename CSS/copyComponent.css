@@ -61,3 +61,7 @@
     font-family: "Nunito";
 }
 
+.copy-inputs button:hover{
+    background-color: #ffc800;
+}
+
