@@ -66,7 +66,7 @@ a.cards-links {
     fill: #31343A;
 }
 
-/* setup.html - main */
+/* setup-patrocinador.html - main */
 
 .section-cards{
     display: flex;
@@ -106,10 +106,11 @@ a.cards-links {
     justify-content: center;
 }
 
-/* setup.html - warning */
+/* setup-patrocinador.html - warning */
 
 .container-warning {
     margin-top: 20px;
+    margin-bottom: 50px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -135,7 +136,8 @@ a.cards-links {
 .container-warning div p{
     text-align: left;
     font-size: 14px;
-    color: #484848
+    color: #484848;
+    padding: 0px 17px;
 }
 
 .container-btn-acess{
@@ -152,4 +154,99 @@ a.cards-links {
     width: 144px;
     display: flex;
     gap: 5px;
+}
+
+.container-btn-acess:hover{
+    background-color: #733ed6;
+}
+
+/* setup-me.html - main */
+
+
+.containerMain{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.containerMain div.containerChild{
+    display: flex;
+    width: 100%;
+    max-width: 648px;
+}
+.child-1{
+    padding: 0px 20px;
+}
+
+.child-1 form{
+    display: flex;
+    gap: 1rem;
+    flex-direction: column;
+    width: 100%;
+}
+
+.containerMain div h5{
+    color: #B4B4B4;
+    font-size: 12px;
+}
+
+.container-ipt{
+    background-color: #212630;
+    display: flex;
+    gap: 1rem;
+    padding: 10px 10px;
+    border-radius: 5px;
+}
+
+.container-ipt div{
+    display: flex;
+    align-items: center;
+    border-right: 1px solid #484848;
+    padding-right: 10px;
+}
+
+.container-ipt input{
+    background-color: #212630;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.container-btn-save{
+    background-color: #1abb004d;
+    display: flex;
+    gap: 1rem;
+    border: 1px solid #1ABB00;
+    border-radius: 5px;
+    padding: 14px 20px;
+}
+
+.container-btn-save div{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-left: 1px solid #1ABB00;
+}
+
+.container-btn-save button{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    color: #1ABB00;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: "Nunito";
+}
+
+.ctn-line{
+    padding: 0px 20px;
+}
+
+.line{
+    width: 100%;
+    border: 1px solid #4246644d;
+    border-top: none;
+}
+
+.date-me{
+    background-color: #191E26;
 }
