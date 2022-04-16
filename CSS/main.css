@@ -217,7 +217,7 @@ a.cards-links {
     gap: 1rem;
     border: 1px solid #1ABB00;
     border-radius: 5px;
-    padding: 14px 20px;
+    padding: 13px 20px;
 }
 
 .container-btn-save div{
@@ -247,6 +247,40 @@ a.cards-links {
     border-top: none;
 }
 
+.content-db{
+    margin-bottom: 30px;
+}
+
 .date-me{
     background-color: #191E26;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.date-me header{
+    height: 40px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    border-bottom: 1px solid #4246644d;
+}
+
+.date-me header h5{
+    font-size: 11px;
+}
+
+.icon-database{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 20px 0px;
+    position: relative;
+}
+
+.status-database{
+    position: absolute;
+    top: 50px;
+    color: #2F3845;
+    font-size: 22px;
+    font-weight: 500;
 }
