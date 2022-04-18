@@ -1,0 +1,106 @@
+.container-logout{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.content-logout{
+    width: 100%;
+    max-width: 480px;
+}
+
+.ctn-logo{
+    padding: 15px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.ctn-title{
+    padding: 0px 20px;
+    font-family: "Nunito";
+    font-weight: 800;
+    padding-bottom: 15px;
+}
+
+.ctn-logo img{
+    width: 55px;
+    width: 55px;
+}
+
+.ctn-welcome{
+    padding: 0px 20px
+}
+
+.ctn-welcome p{
+    font-size: 14px;
+    color: #949494;
+}
+
+.ctn-welcome p span.welcome{
+    color: white;
+}
+
+#userLogout{
+    color: #61FF00;
+}
+
+.content-logout form{
+    margin-top: 20px;
+}
+
+.ctn-inputs{
+    display:flex;
+    flex-direction: column;
+    padding: 5px 20px;
+    gap: 5px;
+}
+
+.ctn-inputs input{
+    height: 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background-color: #1D232D;
+    padding: 0px 10px;
+    color: #7bacd9;
+    font-size: 17px;
+}
+
+.ctn-inputs label{
+    color: #4F5B6D;
+    font-weight: 800;
+    font-size: 19px
+}
+
+.ctn-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    padding: 0px 20px;
+}
+
+.ctn-btn button{
+    width: 100%;
+    height: 45px;
+    border-radius: 5px;
+    border: none;
+    background-color: #0EC621;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.link-singIn{
+    display: flex;
+    gap: 0.7rem;
+    padding-left: 20px;
+    margin-top: 38px;
+    font-family: "Nunito";
+    font-weight: bold;
+}
+
+.link-singIn a{
+    text-decoration: none;
+    color: #0EC621;
+}
