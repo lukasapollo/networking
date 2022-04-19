@@ -38,17 +38,17 @@
 
                 <div class="ctn-inputs ipt1">
                     <label for="">Nome</label>
-                    <input type="text" placeholder="Seu primeiro nome">
+                    <input id="nameUser" type="text" placeholder="Seu primeiro nome">
                 </div>
 
                 <div class="ctn-inputs ipt2">
                     <label for="">Email</label>
-                    <input type="text" placeholder="Seu melhor email">
+                    <input id="sendEmail" type="email" placeholder="Seu melhor email" autocomplete="current-email">
                 </div>
 
                 <div class="ctn-inputs ipt3">
                     <label for="">Senha</label>
-                    <input type="text" placeholder="Sua senha">
+                    <input id="sendPassword" type="password" placeholder="Sua senha" autocomplete="current-password">
                 </div>
                 
                 <div class="ctn-btn">
@@ -68,6 +68,11 @@
         <span class="loader"></span>
     </div>
 
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+
+    <script src="./JS/index.js"></script>
     <script src="./JS/logs.js"></script>
 </body>
 </html>
