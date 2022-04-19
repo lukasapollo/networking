@@ -66,6 +66,11 @@
     font-size: 17px;
 }
 
+.ctn-inputs input::placeholder{
+    color: #4f5b6d9c;
+    font-weight: 500;
+}
+
 .ctn-inputs label{
     color: #4F5B6D;
     font-weight: 800;
@@ -78,6 +83,7 @@
     justify-content: center;
     margin-top: 15px;
     padding: 0px 20px;
+    position: relative;
 }
 
 .ctn-btn button{
@@ -89,6 +95,21 @@
     color: #fff;
     font-size: 18px;
     font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.ctn-btn button:hover {
+    background-color: #03e019;
+}
+
+.ctn-btn .disabled{
+    display: none;
+}
+
+div.disabled{
+    display: none;
 }
 
 .link-singIn{
@@ -98,9 +119,13 @@
     margin-top: 38px;
     font-family: "Nunito";
     font-weight: bold;
+    margin-bottom: 50px;
 }
 
 .link-singIn a{
     text-decoration: none;
     color: #0EC621;
 }
+
+
+

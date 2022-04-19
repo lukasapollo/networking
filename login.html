@@ -14,7 +14,7 @@
     <link rel="shortcut icon" type="image/svg" href="./assets/img/Logo-network-favicon.svg">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/CSS/all.css">
     <title>Sistema SDM</title>
 </head>
@@ -27,45 +27,27 @@
             </div>
 
             <div class="ctn-title">
-                <h2>Log out</h2>
-            </div>
-
-            <div class="ctn-welcome">
-                <p><span class="welcome">Bem vindo!</span>  Vimos que <span id="userLogout">Lukas</span> convidou você a fazer parte da nossa comunidade.  Conclua o cadastro e decolaremos juntos nessa</p>
+                <h2>Log in</h2>
             </div>
 
             <form action="">
 
-                <div class="ctn-inputs ipt1">
-                    <label for="">Nome</label>
-                    <input type="text" placeholder="Seu primeiro nome">
-                </div>
-
                 <div class="ctn-inputs ipt2">
                     <label for="">Email</label>
-                    <input type="text" placeholder="Seu melhor email">
+                    <input id="email-singIn" type="text" placeholder="Seu melhor email">
                 </div>
 
                 <div class="ctn-inputs ipt3">
-                    <label for="">Senha</label>
+                    <label id="password-singIn" for="">Senha</label>
                     <input type="text" placeholder="Sua senha">
                 </div>
                 
                 <div class="ctn-btn">
-                    <button><span class="btn-entrar">Finalizar Cadastro</span><span class="loader-simples disabled"></span></button>
+                    <button><span class="btn-entrar">Entrar</span><span class="loader-simples disabled"></span></button>
                 </div>
 
             </form>
-
-            <div class="link-singIn">
-                <p>Já é um menbro?</p>
-                <a href="login.html">Sign In</a>
-            </div>
         </div>
-    </div>
-
-    <div class="container-loader disabled">
-        <span class="loader"></span>
     </div>
 
     <script src="./JS/logs.js"></script>
