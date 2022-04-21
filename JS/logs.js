@@ -86,7 +86,7 @@ function addNetwork(Email, userName){
         indicados: firebase.firestore.FieldValue.arrayUnion({email: Email, username: userName}),
     }, { merge: true }).then(() => {
         disabled()
-        document.querySelector('.btn-entrar').innerHTML = 'Cadastrado! Aguarde...'
+        disabledModal()
         setTimeout(() => {
             window.location.href = `login.html?name=${userName}`
         }, 3000)
@@ -98,4 +98,9 @@ function disabled(){
     const btnLoader = document.querySelector('.loader-simples')
     btnEntrar.classList.toggle('disabled');
     btnLoader.classList.toggle('disabled');
+}
+
+function disabledModal(){
+    const modalAlert = document.querySelector('.alert-container')
+    modalAlert.classList.toggle('disabled');
 }
