@@ -1,8 +1,11 @@
 import { keyCodeRef } from "./KeyCode/keyCodeRef.js"
 
 const db = firebase.firestore();
-
-
+const now = new Date();
+const dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
+const monName = new Array ("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro")
+const dateNow = dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  + now.getFullYear ()
+console.log(dateNow)
 window.onload = () => {
     if(searchReference() == null){
         document.querySelector('.container-loader').classList.add('disabled')
@@ -58,9 +61,10 @@ function Logout() {
             username: userName,
             patrocinador: searchReference(),
             codeReference: code,
+            dateCreation: dateNow
         }, { merge: true }).then(() => {
             
-               createNetwork(Email, userName, code)
+               createNetwork(Email, userName, code, dateNow)
             
         }).catch((e) => {
             console.log(e)
@@ -71,27 +75,32 @@ function Logout() {
         disabledModal().alertError(err.code)
         setTimeout(() => {
             document.location.reload(true);
-        }, 1000)
+        }, 3000)
     })
 }
 
-function createNetwork(Email, userName, code){
+function createNetwork(Email, userName, code, dateCreation){
     db.collection('network').doc(code).set({
         indicados: firebase.firestore.FieldValue.arrayUnion(),
         user: userName
     }, { merge: true }).then(() => {
-        addNetwork(Email, userName)
+        addNetwork(Email, userName, code, dateCreation)
     })
 }
 
-function addNetwork(Email, userName){
+function addNetwork(Email, userName, code, dateCreation){
     db.collection('network').doc(searchReference()).set({
-        indicados: firebase.firestore.FieldValue.arrayUnion({email: Email, username: userName}),
+        indicados: firebase.firestore.FieldValue.arrayUnion({
+            email: Email, 
+            username: userName,
+            code,
+            dateCreation
+        }),
     }, { merge: true }).then(() => {
         disabled()
         disabledModal()
         setTimeout(() => {
-            window.location.href = `login.html?name=${userName}`
+           // window.location.href = `login.html?name=${userName}`
         }, 3000)
     }).catch((err) => {
         disabledModal()
