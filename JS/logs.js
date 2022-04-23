@@ -67,8 +67,11 @@ function Logout() {
         })
         
     }).catch(err => {
-        console.log(err)
         disabled()
+        disabledModal().alertError(err.code)
+        setTimeout(() => {
+            document.location.reload(true);
+        }, 1000)
     })
 }
 
@@ -90,6 +93,8 @@ function addNetwork(Email, userName){
         setTimeout(() => {
             window.location.href = `login.html?name=${userName}`
         }, 3000)
+    }).catch((err) => {
+        disabledModal()
     })
 }
 
@@ -103,4 +108,32 @@ function disabled(){
 function disabledModal(){
     const modalAlert = document.querySelector('.alert-container')
     modalAlert.classList.toggle('disabled');
+    
+    return {
+        alertError(errCode){
+            const pathSVG = document.querySelector(".path-color")
+            const contentAlert = document.querySelector(".content-alert")
+            pathSVG.classList.toggle('pathColorRed');
+            contentAlert.classList.toggle('b-red')
+            
+            switch (errCode){
+                case 'auth/email-already-in-use':
+                    document.querySelector('.title-alert').innerHTML = 'Error!'
+                    document.querySelector('.p-description').innerHTML = 'Já existe um usuário cadastrado com esse email'
+                    break
+                case 'auth/invalid-email':
+                    document.querySelector('.title-alert').innerHTML = 'Error!'
+                    document.querySelector('.p-description').innerHTML = 'Email invalido'
+                    break
+                case 'auth/weak-password':
+                    document.querySelector('.title-alert').innerHTML = 'Atenção'
+                    document.querySelector('.p-description').innerHTML = 'Consideramos sua senha fraca'
+                default:
+                    console.log(errCode)
+            }
+        },
+    }
 }
+
+
+
