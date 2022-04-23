@@ -5,7 +5,7 @@ const now = new Date();
 const dayName = new Array ("domingo", "segunda", "terça", "quarta", "quinta", "sexta", "sábado")
 const monName = new Array ("janeiro", "fevereiro", "março", "abril", "Maio", "junho", "agosto", "outubro", "novembro", "dezembro")
 const dateNow = dayName[now.getDay() ] + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  + now.getFullYear ()
-console.log(dateNow)
+
 window.onload = () => {
     if(searchReference() == null){
         document.querySelector('.container-loader').classList.add('disabled')
