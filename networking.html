@@ -37,10 +37,10 @@
 
         <div class="copy-inputs ">
             <div class="container-inputs">
-                <input type="text" value="www.sdm-sistema.web.app?ref=65611201" disabled>
+                <input id="copyValue" type="text" value="www.sdm-sistema.web.app?ref=65611201">
                 <img src="/assets/img/icone-select-all.svg" alt="">
             </div>
-            <button>Copy URL</button>
+            <button id="copyURL">Copy URL</button>
         </div>
    </div>
 
@@ -103,5 +103,15 @@
             </div>
         </div>
    </main>
+
+   <div class="container-loader">
+        <span class="loader"></span>
+   </div>
+
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+   <script src="./JS/index.js"></script>
+   <script src=./JS/networking.js></script>
 </body>
 </html>
