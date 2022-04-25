@@ -100,7 +100,7 @@ function addNetwork(Email, userName, code, dateCreation){
         disabled()
         disabledModal()
         setTimeout(() => {
-           // window.location.href = `login.html?name=${userName}`
+            window.location.href = `login.html?name=${userName}`
         }, 3000)
     }).catch((err) => {
         disabledModal()
