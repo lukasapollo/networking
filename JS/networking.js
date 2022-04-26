@@ -64,7 +64,7 @@ function searchDownlines(keySearch){
                     <span>${downline.email}</span>
                 </div>
                 <div>
-                    <button onclick="infoUser('${downline.code}', 'event')">ver</button>
+                    <button onclick="infoUser('${downline.code}')">ver</button>
                 </div>
             </div>
             `
@@ -75,10 +75,26 @@ function searchDownlines(keySearch){
 function infoUser(code) {
     const modalUser = document.querySelector('.modalUser-container')
     modalUser.classList.toggle('disabled')
-    console.log(code.target)
+
+    db.collection('network').onSnapshot((data) => {
+        data.docs.forEach((docs) => {
+          if(docs.id == code){
+            document.querySelector('.value-downlines').innerText = docs.data().indicados.length
+            document.querySelector('.value-user').innerText = docs.data().user
+            document.querySelector('.value-email').innerText = docs.data().Email
+            document.querySelector('.value-start').innerText = docs.data().dateCreation
+            setTimeout(() => {
+                const loaderModal = document.querySelector('.loader-btn')
+                loaderModal.classList.toggle('disabled')
+            }, 2000)  
+          }})
+    })
+
 }
 
 function closeModal(){
     const modalUser = document.querySelector('.modalUser-container')
     modalUser.classList.toggle('disabled')
+    const loaderModal = document.querySelector('.loader-btn')
+    loaderModal.classList.toggle('disabled')
 }

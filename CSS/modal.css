@@ -15,7 +15,8 @@
     max-width: 480px;
     background-color: #12161C;
     border-radius: 5px;
-    padding-bottom: 10px;
+    padding-bottom: 16px;
+    position: relative;
 }
 
 .header-modal{
@@ -32,7 +33,8 @@
 
 .descriptionModalUser{
     padding: 20px 20px;
-    font-size: 13px;
+    padding-right: 80px;
+    font-size: 14px;
     color: #556278;
 }
 
@@ -67,11 +69,11 @@
 .btn-modalUser button{
     width: 100%;
     height: 40px;
-    background-color: #D8237A;
+    background-color: #ffd302;
     border: none;
     font-weight: bold;
     font-family: "Nunito";
-    color: #FFFFFF;
+    color: #343434;
     border-radius: 3px;
     cursor: pointer;
 }
@@ -80,5 +82,21 @@
     width: 40%;
     background-color: #d8237a00;
     border: 1px solid #ededed17;
+    color: #ffc801;
 }
 
+.loader-btn{
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #12161C;
+}
+
+.contentModalUser div span.valuesUser{
+    color: #ffffffe0;
+    font-weight: 500;
+}
