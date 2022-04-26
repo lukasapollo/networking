@@ -77,3 +77,8 @@ function infoUser(code) {
     modalUser.classList.toggle('disabled')
     console.log(code.target)
 }
+
+function closeModal(){
+    const modalUser = document.querySelector('.modalUser-container')
+    modalUser.classList.toggle('disabled')
+}
