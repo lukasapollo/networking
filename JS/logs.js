@@ -82,7 +82,9 @@ function Logout() {
 function createNetwork(Email, userName, code, dateCreation){
     db.collection('network').doc(code).set({
         indicados: firebase.firestore.FieldValue.arrayUnion(),
-        user: userName
+        user: userName,
+        Email,
+        dateCreation
     }, { merge: true }).then(() => {
         addNetwork(Email, userName, code, dateCreation)
     })
