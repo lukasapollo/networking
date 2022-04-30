@@ -60,6 +60,7 @@
     font-size: .8rem;
     color: #717987;
     align-items: center;
+    text-align: center;
 }
 
 .item-list div button {

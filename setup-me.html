@@ -55,17 +55,24 @@
                     <div>
                         <img src="./assets/img/icon2-pix.svg" alt="">
                     </div>
-                    <input type="text" placeholder="Digite a sua chave aqui...">
+                    <input id="value-pix" type="text" placeholder="Digite a sua chave aqui...">
                 </div>
 
                 <div class="container-ipt ipt-2">
                     <div>
                         <img src="./assets/img/icon2-whats.svg" alt="">
                     </div>
-                    <input type="text" placeholder="Link do seu grupo...">
+                    <input id="link-grupo" type="text" placeholder="Link do seu grupo...">
                 </div>
 
-                <div class="container-btn-save">
+                <div class="container-ipt ipt-2">
+                    <div>
+                        <img src="./assets/img/icon-contact.svg" alt="">
+                    </div>
+                    <input id="contact" name="contact" maxlength="15" type="contact" placeholder="Deixe seu contato">
+                </div>
+
+                <div class="container-btn-save" onclick="salveDate(event)">
                     <button>Salvar</button> 
                     <div><img src="./assets/img/icon-arrow.svg" alt=""></div>
                 </div>
@@ -94,6 +101,14 @@
             </div>
         </div>
     </div>
-    
+
+    <div class="container-loader">
+        <span class="loader"></span>
+    </div>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
+   <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>
+   <script src="./JS/index.js"></script>
+   <script src="./JS/setup.js"></script>
 </body> 
 </html>

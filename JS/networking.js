@@ -4,7 +4,6 @@ const verifyAuth = () => {
     firebase.auth().onAuthStateChanged((user) => {  
         if(user){
             getContentUser(user)
-            console.log(user)
         } else {
             window.location.href = 'login.html'
         }
