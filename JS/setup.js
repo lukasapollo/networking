@@ -39,7 +39,8 @@ function salveDate(event) {
 
     db.collection('network').doc(keyCode).set({
         linkGroup: acessGroup,
-        keyPix: keyPIX
+        keyPix: keyPIX,
+        contact
     }, { merge: true }).then(() => {
             getContentNetwork(keyCode)
     })

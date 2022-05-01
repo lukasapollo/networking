@@ -69,7 +69,7 @@
                     <div>
                         <img src="./assets/img/icon-contact.svg" alt="">
                     </div>
-                    <input id="contact" name="contact" maxlength="15" type="contact" placeholder="Deixe seu contato">
+                    <input id="contact" name="contact" type="contact" placeholder="Link do seu">
                 </div>
 
                 <div class="container-btn-save" onclick="salveDate(event)">
@@ -93,9 +93,25 @@
                     <h5>DADOS CADASTRADOS</h5>
                </header>
                <main>
-                    <div class="icon-database">
-                        <img src="./assets/img/icon-database.svg" alt="">
-                        <div class="status-database">Nenhum dado cadastrado</div>
+                   <div class="dataSets">
+                        <div>
+                            <div>PIX:</div>
+                            <div> x </div>
+                        </div>
+                        <div>
+                            <div>Grupo:</div>
+                            <div>x</div>
+                        </div>
+                        <div>
+                            <div>Contact:</div>
+                            <div> x </div>
+                        </div> 
+                   </div>
+
+                    <div class="icon-database disabled">
+                       <!--  <img src="./assets/img/icon-database.svg" alt="">
+                        <div class="status-database">Nenhum dado cadastrado</div> -->
+                        
                     </div>
                </main>
             </div>
@@ -105,6 +121,7 @@
     <div class="container-loader">
         <span class="loader"></span>
     </div>
+
    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-auth.js"></script>
    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-firestore.js"></script>

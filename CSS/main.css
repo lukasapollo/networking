@@ -285,3 +285,18 @@ a.cards-links {
     font-size: 22px;
     font-weight: 500;
 }
+
+.dataSets{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+}
+
+.dataSets div{
+    padding: 0px 10px;
+    height: 40px;
+    border-bottom: 1px solid #39465A;
+    display: flex;
+    align-items: center;
+}
